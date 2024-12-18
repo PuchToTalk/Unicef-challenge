@@ -9,7 +9,7 @@ This project analyzes mobility data during a crisis (e.g., COVID-19 lockdown) to
 - **Analyze Mobility Trends Over Time**: Identify peaks and drops in mobility across different days and time windows.  
 - **Cluster Areas with Similar Behavior**: Group areas based on origin-destination coordinates to identify zones with persistent movement.  
 - **Identify Vulnerable Areas**: Highlight regions with the highest mobility increases during the crisis.  
-- **Predict Reduction (%)**: Use machine learning to explain and predict mobility reduction based on key features.
+
 
 ---
 
@@ -19,7 +19,6 @@ The dataset includes the following columns:
 - **Crisis**: Mobility count during the crisis.  
 - **x0, y0**: Origin coordinates (longitude, latitude).  
 - **x1, y1**: Destination coordinates (longitude, latitude).  
-- **time_window**: 8-hour intervals for each day (e.g., `day1_0000`, `day1_0800`).
 
 ---
 
@@ -92,12 +91,7 @@ The dataset includes the following columns:
 - Clusters identified **high-mobility zones** and regions of lower compliance.  
 - Baseline mobility, crisis mobility, and distance were the most important predictors of reduction.
 
----
 
-## **Recommendations**
-1. Focus mobility control efforts on the **upper-right region** where mobility persists.  
-2. Prioritize interventions during the **08:00–16:00 time window** to reduce daytime activity.  
-3. Monitor and enforce restrictions in high-mobility origin and destination zones.
 
 ---
 
@@ -108,23 +102,6 @@ The dataset includes the following columns:
 
 ---
 
-## **Deliverables**
-- **Visualizations**:  
-   - Heatmaps, line charts, and scatter plots to highlight trends and vulnerable areas.  
-- **Machine Learning Model**:  
-   - Predicts `Reduction (%)` with strong accuracy.  
-- **Actionable Insights**:  
-   - Identified key regions and time windows for targeted intervention.
-
----
-
-## **Dashboard**
-For interactive exploration, the analysis can be visualized using tools like **Tableau**, **Dash**, or **Power BI**. Policymakers can:
-- Monitor mobility trends.  
-- Identify vulnerable areas.  
-- Evaluate the impact of interventions over time.
-
----
 
 ## **Technologies Used**
 - **Python**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn.  
